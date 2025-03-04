@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grok：马斯克Grok3 国内使用指南~ 【2025年3月更新】</title>
+    <meta name="description" content="Grok 中文版 是 马斯克 xAI 的 grok3 模型的中文版本，专为中文用户设计，提供更流畅、更精准的 AI对话体验。在国内轻松使用 Grok3 中文版 教程，无需翻墙，支持 Grok-3 Reasoning 及中文版功能。本指南提供全面的 Grok3 国内使用指南，包括国内可用的 Grok3 网页版、Grok3 国内入口、Grok 官网平替和详细使用教程，帮助您快速使用上 grok~">
+    <meta name="keywords" content="xai,grok,grok官网,grok3,马斯克,马斯克ai,马斯克 ai,马斯克grok官网,gork,gork官网,x ai,grok ai,grok 3,gork3,grok-3">
+    <meta property="og:title" content="Grok：马斯克Grok3 国内使用指南~">  
+    <meta property="og:description" content="Grok 中文版 是 马斯克的 grok3 模型的中文版本，专为中文用户设计，提供更流畅、更精准的 AI对话体验。在国内轻松使用 Grok3 中文版 教程，无需翻墙，支持 Grok-3 Reasoning 及中文版功能。本指南提供全面的 Grok3 国内使用指南，包括国内可用的 Grok3 网页版、Grok3 国内入口、Grok 官网平替和详细使用教程，帮助您快速使用上 grok~">
+    <meta property="twitter:title" content="Grok：马斯克Grok3 国内使用指南~">
+    <meta property="twitter:description" content="Grok 中文版 是 马斯克的 grok3 模型的中文版本，专为中文用户设计，提供更流畅、更精准的 AI对话体验。在国内轻松使用 Grok3 中文版 教程，无需翻墙，支持 Grok-3 Reasoning 及中文版功能。本指南提供全面的 Grok3 国内使用指南，包括国内可用的 Grok3 网页版、Grok3 国内入口、Grok 官网平替和详细使用教程，帮助您快速使用上 grok~">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta charSet="utf-8" />
+    <meta http-equiv='content-language' content='zh-CN'>
+    <meta name="msvalidate.01" content="13FA48707DFB7A4DA2641B1733A668E8" />
+    <link rel="icon" href="/openai.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        .container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .content {
+            text-align: center;
+            max-width: 800px;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            background: -webkit-linear-gradient(45deg, var(--color-1), var(--color-2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p {
+            font-size: 24px;
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 24px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+        }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--color-1), var(--color-2));
+            z-index: -1;
+            opacity: 0.8;
+        }
+        .arrow-down {
+            position: absolute;
+            bottom: 20px;
+            cursor: pointer;
+            font-size: 32px;
+            color: #007bff;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* New Section Styles */
+        .markdown-content {
+            padding: 40px;
+            background-color: #00A2E8;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .markdown-content h2 {
+            font-size: 36px;
+            margin-top: 20px;
+        }
+        .markdown-content p, .markdown-content li {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .markdown-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .markdown-content th, .markdown-content td {
+            border: 1px solid #444;
+            padding: 10px;
+            text-align: left;
+        }
+        .markdown-content th {
+            background-color: #333;
+        }
+
+        /* Mobile Styles */
+        @media screen and (max-width: 767px) {
+            .container {
+                min-height: auto;
+                padding-top: 150px;
+                padding-bottom: 20px;
+            }
+            h1 {
+                font-size: 36px;
+            }
+            p {
+                font-size: 18px;
+            }
+            .button {
+                font-size: 20px;
+                padding: 10px 20px;
+            }
+            .markdown-content {
+                padding: 20px;
+            }
+            .markdown-content h2 {
+                font-size: 28px;
+            }
+            .markdown-content p, .markdown-content li {
+                font-size: 16px;
+            }
+            .markdown-content table {
+                display: block;
+                overflow-x: auto;
+                width: 100%;
+            }
+            .markdown-content th, .markdown-content td {
+                white-space: nowrap;
+            }
+            .arrow-down {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="content">
+            <h1>xAI Grok3 中文版</h1>
+            <h2>2025年 最新的 Grok3 中文版。</h2>
+            <h2>轻松使用上 Grok3 ~</h2>
+            <h3>无需翻墙、无需注册账号~ </h3>
+            <a href="https://chat.yixiaai.com" target="_self" class="button">开始对话</a>
+            <h4>更新日期：<strong id="curdate"></strong></h4>
+        </div>
+        <div class="arrow-down" onclick="scrollToContent()">⬇️更多Grok中文版镜像网站</div>
+    </div>
+
+    <!-- Second Screen Content -->
+    <section class="markdown-content" id="more-content">
+
+    <h1>Grok：马斯克Grok3 国内使用指南~ 【2025年3月更新】</h1>
+    <p>在国内轻松使用 <a href="https://chat.yixiaai.com"><strong>xAI Grok3 中文版</strong></a> 教程，<strong>无需翻墙</strong>，<strong>支持 Grok-3 Reasoning 及中文版功能</strong></p>
+    <p>本指南提供全面的 <strong>Grok3 国内使用指南</strong>，包括国内可用的 <a href="https://chat.yixiaai.com"><strong>xAI Grok3 网页版</strong></a>、<a href="https://chat.yixiaai.com"><strong>Grok3 国内入口</strong></a>、<a href="https://chat.yixiaai.com"><strong>Grok 官网平替</strong></a> 和 详细使用教程，帮助您快速使用上 grok~</p>
+    <hr>
+    <h2>什么是 xAI Grok3 中文版？</h2>
+    <p><a href="https://chat.yixiaai.com"><strong>xAI Grok 中文版</strong></a> 是 马斯克的 xAI 的 grok3 模型的中文版本，专为中文用户设计，提供更流畅、更精准的 AI对话体验。</p>
+    <p>相较于官网，<strong>Grok3 中文版</strong>在以下方面更适合国内用户：</p>
+    <ul>
+        <li><strong>国内直连</strong>：通过国内网站访问，无须额外的网络工具。</li>
+        <li><strong>中文优化</strong>：提供更自然流畅的中文对话，适用于学习、工作和日常生活。</li>
+        <li><strong>功能强大</strong>：支持 <strong>Grok3 reasoning</strong>，和 o1、R1一样的<strong>Reasoning 模型</strong>，支持 <strong>Deep Search</strong> （深度研究）功能。</li>
+    </ul>
+    <hr>
+    <h2>国内推荐 Grok 中文版镜像网站</h2>
+    <p>以下是我们精选的国内优质 <strong>Grok 中文版镜像网站</strong>，无需翻墙即可使用：</p>
+    <ul>
+        <li><a href="https://chat.yixiaai.com">chat.yixiaai.com</a> - <strong>Grok 中文版</strong>，支持 Grok-3 Reasoning、GPT-o1、o3及DeepSeek R1，支持 AI绘画，扫码就能用~</li>
+        <li><a href="https://www.yixiaai.com">chat.lify.vip</a> - <strong>Grok 镜像网站</strong>，支持 Grok-3 Reasoning、GPT-o1、o3及DeepSeek R1，AI文件、AI PPT、AI助手、AI插件功能、思维导图~</li>
+        <li><a href="https://guide1.lanjing.ai">guide1.lanjing.ai</a> - <strong>ChatGPT 镜像网站</strong>，支持 GPT4、4o，支持AI绘画（Midjourney和Dall·E）</li>
+        <li><a href="https://ai.lansejingyu.com">ai.lansejingyu.com</a> - ChatGPT-4 镜像，支持 GPT4、4o，简单便捷~</li>
+        <li><a href="https://lanjing.ai">lanjing.ai</a> - <strong>免费ChatGPT</strong>，支持 GPT4、4o 支持 MJ 绘画</li>
+    </ul>
+    <hr>
+    <h2>为什么选择 Grok 中文版？</h2>
+    <ol>
+        <li><strong>中文支持</strong>：深谙中文语境，提供无缝的中文交互体验。</li>
+        <li><strong>国内直连</strong>：无需翻墙，访问体验更顺畅。</li>
+        <li><strong>丰富功能</strong>：适用于学习、工作、内容创作等多个场景，包括写作、编程、论文、翻译、AI PPT 等。</li>
+    </ol>
+    <p>通过上述推荐的 <strong>grok3 中文版镜像网站</strong>，您可以无障碍地使用 Grok，享受顺畅的在线体验。</p>
+    <hr>
+    <h2>Grok 官网与 Grok 中文版的区别</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>对比项</th>
+                <th>Grok 官网</th>
+                <th>Grok 中文版（镜像网站）</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>访问方式</td>
+                <td>需翻墙，访问速度受限</td>
+                <td>无需翻墙，国内快速访问</td>
+            </tr>
+            <tr>
+                <td>语言支持</td>
+                <td>多语言（包括中文，但优化不足）</td>
+                <td>专注中文优化，响应更快速</td>
+            </tr>
+            <tr>
+                <td>功能支持</td>
+                <td>支持 grok 3</td>
+                <td>支持 grok3 reasoning，还有更多实用功能</td>
+            </tr>
+            <tr>
+                <td>注册使用</td>
+                <td>需海外手机号注册</td>
+                <td>扫码就能用</td>
+            </tr>
+        </tbody>
+    </table>
+    <p><strong>总结</strong>：如果您在国内使用 Grok，强烈建议使用上述 <strong>Grok 中文版镜像网站</strong>。</p>
+    <hr>
+    <h2>如何使用 Grok3 中文版？</h2>
+    <ol>
+        <li><strong>选择网页版</strong>：访问推荐的国内入口（如 <strong>一下AI (<a href="https://chat.yixiaai.com">chat.yixiaai.com</a>)</strong>）。</li>
+        <li><strong>扫码登录</strong>：使用扫码功能登录，进入聊天页面，输入问题即可获得回答。</li>
+        <li><strong>选择模型</strong>：根据需求选择 grok3 模型。</li>
+        <li><strong>开始对话</strong>：享受流畅的中文聊天体验，支持写作、编程、翻译、办公等多种功能。</li>
+    </ol>
+    <hr>
+    <h2>常见使用问题（FAQ）</h2>
+    <ol>
+        <li><strong>使用中文站是否需要翻墙？</strong><br>不需要，推荐的所有中文站点均可在国内网络环境中直接访问。</li>
+        <li><strong>中文版站点的稳定性如何？</strong><br>推荐的镜像站点经过严格筛选，具有良好的稳定性和用户体验。</li>
+        <li><strong>中文站是否完全免费？</strong><br>大多数中文站都提供免费服务~</li>
+        <li><strong>使用 grok3 模型有使用限制吗？</strong><br>没有使用限制，推荐通过中文站获得最佳体验。</li>
+        <li><strong>这些中文站是否安全？</strong><br>推荐的所有中文站均经过安全检测，但使用时请避免输入敏感信息。</li>
+    </ol>
+    <hr>
+    <h2>联系我们与持续更新</h2>
+    <p>我们将定期更新镜像站点和使用指南，以确保您获得最佳使用体验。</p>
+    <p>如果本指南对您有帮助，请帮忙点亮 <strong>Star</strong>~</p>
+
+<footer>
+    <p>&copy; 2025 ChatGPT 中文版指南</p>
+</footer>
+
+    </section>
+
+    <script>
+        const colors = [
+            ['#ff0080', '#7928ca'], 
+            ['#ff4d4d', '#f9cb28'], 
+            ['#7928ca', '#4c88e8'], 
+            ['#4c88e8', '#4FE2B1'], 
+            ['#ff0080', '#ff7f00']  
+        ];
+        const randomIndex = Math.floor(Math.random() * colors.length);
+        const [color1, color2] = colors[randomIndex];
+        document.documentElement.style.setProperty('--color-1', color1);
+        document.documentElement.style.setProperty('--color-2', color2);
+
+        function scrollToContent() {
+            document.getElementById('more-content').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function formatDate(date) {
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+            return `${year}/${month}/${day}`;
+        }
+        
+        document.getElementById('curdate').textContent = formatDate(new Date());
+    </script>
+</body>
+</html>
